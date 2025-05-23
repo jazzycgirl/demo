@@ -5,7 +5,7 @@ sources:
     database: demo_db        
     schema: demo_schema      
     tables:
-      - name: raw_sales
+      - name: raw_sales 
         description: "Raw sales data from source system"
         loaded_at_field: updated_at
         freshness:
