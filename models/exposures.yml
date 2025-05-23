@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: revenue_dashboard
+    label: Revenue Dashboard
+    type: dashboard
+    maturity: high
+    url: https://acme.looker.com/dashboards/23
+    description: >
+      This dashboard tracks daily revenue metrics for executives.
+
+    depends_on:
+      - ref('fct_customer_sales')
+
+    owner:
+      name: Jasmine Chizer
+      email: jasmine@acme.com
