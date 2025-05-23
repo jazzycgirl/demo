@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: raw
-    database: demo_db        # replace with your Snowflake DB if different
-    schema: demo_schema      # replace with your Snowflake schema if different
+    database: demo_db        
+    schema: demo_schema      
     tables:
       - name: raw_sales
         description: "Raw sales data from source system"
