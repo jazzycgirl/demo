@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: demo_db        # replace with your Snowflake DB if different
+    schema: demo_schema      # replace with your Snowflake schema if different
+    tables:
+      - name: raw_sales
+        description: "Raw sales data from source system"
+        loaded_at_field: updated_at
+        freshness:
+          warn_after: { count: 12, period: hour }
+          error_after: { count: 24, period: hour }
